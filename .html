@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masood Muneer - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+    body.dark-mode {
+      background: #0a0a0a;
+      color: #e2e8f0;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .icon-hover {
+      transition: transform 0.3s, color 0.3s;
+      color: white;
+    }
+    .icon-hover:hover {
+      transform: scale(1.2);
+      color: #0A66C2;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #0f172a;
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+    }
+    #hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+    }
+    #hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skills div {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .project-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #0f172a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    form input, form textarea {
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+    }
+    .filter-buttons button,
+    form button {
+      background: #0A66C2;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #0A66C2;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div><strong>Masood Muneer</strong></div>
+    <div>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <div style="height:72px;"></div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <img src="masood.jpg.jpg" alt="Masood Muneer">
+    <h1>I'm a <span class="typing-text"></span></h1>
+    <p>Passionate about building elegant web apps and digital products.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Masood Muneer, a developer who loves crafting user-friendly and modern digital experiences. Skilled in HTML, Java, C, C++, and Linux, with solid teamwork using GitHub and open-source tools.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Tech Stack</h2>
+    <div class="skills">
+      <div><h3>HTML</h3><p>Semantic and accessible web markup.</p></div>
+      <div><h3>CSS</h3><p>Responsive and modern styling techniques.</p></div>
+      <div><h3>Java</h3><p>Object-oriented programming & backend logic.</p></div>
+      <div><h3>C/C++</h3><p>System-level programming and algorithms.</p></div>
+      <div><h3>Linux</h3><p>Shell scripting and server admin skills.</p></div>
+      <div><h3>Git & GitHub</h3><p>Version control and team collaboration.</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="filter-buttons" style="text-align:center; margin-bottom:20px;">
+      <button onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('web')">Web</button>
+      <button onclick="filterProjects('linux')">Linux</button>
+    </div>
+    <div id="projectGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+      <div class="project-card" data-category="web">
+        <h3>Student Portal</h3>
+        <p>Student registration portal using ASP.NET and MSSQL.</p>
+        <a href="#" class="icon-hover">View Demo</a>
+      </div>
+      <div class="project-card" data-category="web">
+        <h3>Calculator App</h3>
+        <p>Responsive calculator using HTML, CSS, JS.</p>
+        <a href="#" class="icon-hover">View Demo</a>
+      </div>
+      <div class="project-card" data-category="linux">
+        <h3>Linux File Manager</h3>
+        <p>Command-line tool for managing files in C++.</p>
+        <a href="#" class="icon-hover">View Repo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="skills">
+      <div><h4>HTML & CSS</h4><p>Issued by Coursera</p></div>
+      <div><h4>Java Programming</h4><p>Issued by NPTEL</p></div>
+      <div><h4>Linux Shell Scripting</h4><p>Issued by Udemy</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xknkwvyn" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Let's Connect</h3>
+    <div class="social-icons">
+      <a href="mailto:masoodmuneer0@gmail.com" target="_blank" title="Email" style="color: #EA4335;">
+        <i class="fas fa-envelope"></i> <span>masoodmuneer0@gmail.com</span>
+      </a>
+      <a href="https://github.com/masoodmuneer0" target="_blank" title="GitHub" style="color: #ffffff;">
+        <i class="fab fa-github"></i> <span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/masoodmuneer0" target="_blank" title="LinkedIn" style="color: #0A66C2;">
+        <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+      </a>
+      <a href="https://wa.me/923097703013" target="_blank" title="WhatsApp" style="color: #25D366;">
+        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+      </a>
+    </div>
+    <p style="margin-top: 20px;">© 2025 Masood Muneer. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="whatsapp-float" href="https://wa.me/923097703013" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="topBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed(".typing-text", {
+      strings: ["Developer", "UI/UX Designer", "Creative Coder"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        const match = category === 'all' || card.dataset.category === category;
+        card.style.display = match ? 'block' : 'none';
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+      }
+    });
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      const current = document.body.classList.contains("dark-mode") ? "dark" : "light";
+      localStorage.setItem("theme", current);
+    }
+  </script>
+</body>
+</html>
+<!-- Hero -->
+<section id="hero">
+  <img src="masood.jpg" alt="Masood Muneer" />
+  <h1>I'm a <span class="typing-text"></span></h1>
+  <p>Passionate about building elegant web apps and digital products.</p>
+</section>     fix this code and make a beautiful protfolio 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile Link</title>
+  <style>
+    body {
+      padding: 25px;
+      font-family: Arial, sans-serif;
+    }
+    a.linkedin-link,
+    a.github-link {
+      color: #0A66C2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.linkedin-link:hover,
+    a.github-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Muhammad Masood</h1>
+  <p>Connect with me on LinkedIn:</p>
+  <p>
+    <a class="linkedin-link" href="https://www.linkedin.com/in/muhammad-masood-855810361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+      Visit my LinkedIn Profile
+    </a>
+  </p>
+
+  <p>Check out my GitHub projects:</p>
+  <p>
+    <a class="github-link" href="https://github.com/masoodmuneer0" target="_blank" rel="noopener noreferrer">
+      Visit my GitHub Profile
+    </a>
+  </p>
+</body>
+</html>
